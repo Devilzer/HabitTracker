@@ -6,7 +6,7 @@
   display: flex;
 }
 .fa-calendar {
-  font-size: 60px;
+  font-size: 3em;
 }
 .company__info {
   background-color: #008080;
@@ -17,9 +17,7 @@
   justify-content: center;
   color: #fff;
 }
-.fa-android {
-  font-size: 3em;
-}
+
 @media screen and (max-width: 640px) {
   .main-content {
     width: 90%;
@@ -58,7 +56,7 @@ form {
   padding: 1em 0.5em 0.5em;
   padding-left: 2em;
   outline: none;
-  margin: 1em auto;
+  margin: 0.5em auto;
   transition: all 0.5s ease;
 }
 .form__input:focus {
@@ -74,7 +72,7 @@ form {
   font-weight: 600;
   background-color: #fff;
   border: 1px solid #008080;
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 .btn:hover,
@@ -83,7 +81,10 @@ form {
   color: #fff;
 }
 .heading {
-  margin-top: 10px;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.flex-ctr {
   display: flex;
   justify-content: center;
 }

@@ -1,0 +1,119 @@
+#maincon {
+  display: flex;
+  justify-content: center; }
+  #maincon #container {
+    padding: 0;
+    margin-left: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    box-shadow: 0 0 5px 1px grey;
+    border-radius: 20px; }
+    #maincon #container #heading {
+      margin-left: 0px;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #008080;
+      width: 100%; }
+      #maincon #container #heading .company_logo {
+        margin-right: 0.5em; }
+    #maincon #container #qoute {
+      margin-left: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #008080; }
+    #maincon #container #hinput {
+      margin-left: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #maincon #container #hinput .form-group {
+        display: flex;
+        flex-direction: row;
+        width: 50%; }
+        #maincon #container #hinput .form-group .form__input {
+          width: 100%;
+          border: 0px solid transparent;
+          border-radius: 0;
+          border-bottom: 1px solid #aaa;
+          padding: 1em 0.5em 0.5em;
+          padding-left: 2em;
+          outline: none;
+          margin: 0.5em auto;
+          transition: all 0.5s ease; }
+        #maincon #container #hinput .form-group .form__input:focus {
+          border-bottom-color: #008080;
+          box-shadow: 0 0 5px rgba(0, 80, 80, 0.4);
+          border-radius: 4px; }
+        #maincon #container #hinput .form-group .btn {
+          transition: all 0.5s ease;
+          width: 70%;
+          border-radius: 30px;
+          color: #008080;
+          font-weight: 600;
+          background-color: #fff;
+          border: 1px solid #008080;
+          margin-top: 1em;
+          margin-bottom: 1em; }
+        #maincon #container #hinput .form-group .btn:hover,
+        #maincon #container #hinput .form-group .btn:focus {
+          background-color: #008080;
+          color: #fff; }
+    #maincon #container #habit-list {
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column; }
+      #maincon #container #habit-list #habit-content {
+        border-top: 2px solid #008080;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%; }
+        #maincon #container #habit-list #habit-content h2 {
+          color: #008080;
+          margin: 0;
+          line-height: 46px; }
+        #maincon #container #habit-list #habit-content p {
+          margin: 0;
+          line-height: 46px; }
+        #maincon #container #habit-list #habit-content #buttons {
+          display: flex;
+          flex-direction: row; }
+          #maincon #container #habit-list #habit-content #buttons a {
+            text-decoration: none; }
+          #maincon #container #habit-list #habit-content #buttons h4 {
+            margin: 0;
+            line-height: 46px;
+            border-radius: 5px; }
+          #maincon #container #habit-list #habit-content #buttons h4:hover {
+            cursor: pointer; }
+          #maincon #container #habit-list #habit-content #buttons #status {
+            margin-right: 0.5em; }
+            #maincon #container #habit-list #habit-content #buttons #status .fa-exclamation-triangle {
+              color: goldenrod; }
+            #maincon #container #habit-list #habit-content #buttons #status .fa-window-clos {
+              color: #ec524b; }
+            #maincon #container #habit-list #habit-content #buttons #status .fa-check-square {
+              color: #b8de6f; }
+          #maincon #container #habit-list #habit-content #buttons #status:hover {
+            background-color: #008080; }
+          #maincon #container #habit-list #habit-content #buttons #delete {
+            color: #a20a0a;
+            margin-left: 0.5em; }
+          #maincon #container #habit-list #habit-content #buttons #delete:hover {
+            background-color: #f05454; }
+        #maincon #container #habit-list #habit-content #details a {
+          text-decoration: none; }
+        #maincon #container #habit-list #habit-content #details h4 {
+          line-height: 46px; }
+          #maincon #container #habit-list #habit-content #details h4 .fa-caret-square-o-down {
+            color: #008080; }
+
+form {
+  padding: 0 2em; }

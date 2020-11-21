@@ -12,6 +12,7 @@ app.use(sassMiddleware({
     outputStyle: "extended",
     prefix:"/css"    
 }));
+app.use(express.urlencoded());
 
 //setting up views
 app.set("view engine","ejs");
