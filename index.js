@@ -3,7 +3,7 @@ const port = 3000;
 const path = require("path");
 const app = express();
 const sassMiddleware = require("node-sass-middleware");
-
+const db  = require("./config/mongoose");
 //setting up scss
 app.use(sassMiddleware({
     src : "./assets/scss",

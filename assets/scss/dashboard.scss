@@ -111,13 +111,11 @@
           }
           #status {
             margin-right: 0.5em;
-            .fa-exclamation-triangle {
-              color: goldenrod;
-            }
-            .fa-window-clos {
+
+            .fa-times {
               color: #ec524b;
             }
-            .fa-check-square {
+            .fa-check {
               color: #b8de6f;
             }
           }
@@ -125,11 +123,11 @@
             background-color: #008080;
           }
           #delete {
-            color: #a20a0a;
+            color: #f05454;
             margin-left: 0.5em;
           }
           #delete:hover {
-            background-color: #f05454;
+            background-color: #a20a0a;
           }
         }
         #details {
@@ -140,6 +138,24 @@
             line-height: 46px;
             .fa-caret-square-o-down {
               color: #008080;
+            }
+          }
+        }
+      }
+      .detailscontainer {
+        display: flex;
+        flex-direction: row;
+        #weekview {
+          #parts {
+            #date {
+              font-weight: 600;
+              color: gray;
+            }
+            #hstatus {
+              font-weight: 800;
+            }
+            #hstatus:hover {
+              cursor: pointer;
             }
           }
         }

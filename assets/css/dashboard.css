@@ -95,25 +95,33 @@
             cursor: pointer; }
           #maincon #container #habit-list #habit-content #buttons #status {
             margin-right: 0.5em; }
-            #maincon #container #habit-list #habit-content #buttons #status .fa-exclamation-triangle {
-              color: goldenrod; }
-            #maincon #container #habit-list #habit-content #buttons #status .fa-window-clos {
+            #maincon #container #habit-list #habit-content #buttons #status .fa-times {
               color: #ec524b; }
-            #maincon #container #habit-list #habit-content #buttons #status .fa-check-square {
+            #maincon #container #habit-list #habit-content #buttons #status .fa-check {
               color: #b8de6f; }
           #maincon #container #habit-list #habit-content #buttons #status:hover {
             background-color: #008080; }
           #maincon #container #habit-list #habit-content #buttons #delete {
-            color: #a20a0a;
+            color: #f05454;
             margin-left: 0.5em; }
           #maincon #container #habit-list #habit-content #buttons #delete:hover {
-            background-color: #f05454; }
+            background-color: #a20a0a; }
         #maincon #container #habit-list #habit-content #details a {
           text-decoration: none; }
         #maincon #container #habit-list #habit-content #details h4 {
           line-height: 46px; }
           #maincon #container #habit-list #habit-content #details h4 .fa-caret-square-o-down {
             color: #008080; }
+      #maincon #container #habit-list .detailscontainer {
+        display: flex;
+        flex-direction: row; }
+        #maincon #container #habit-list .detailscontainer #weekview #parts #date {
+          font-weight: 600;
+          color: gray; }
+        #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus {
+          font-weight: 800; }
+        #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus:hover {
+          cursor: pointer; }
 
 form {
   padding: 0 2em; }
