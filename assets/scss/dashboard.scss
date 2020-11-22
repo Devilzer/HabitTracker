@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     box-shadow: 0 0 5px 1px grey;
     border-radius: 20px;
 
@@ -111,10 +112,19 @@
           color: #008080;
           margin: 0;
           line-height: 46px;
+          width: 30%;
         }
         p {
           margin: 0;
           line-height: 46px;
+          font-weight: 500;
+          color: #ffbf00;
+        }
+        #cdate {
+          margin: 0;
+          line-height: 46px;
+          font-weight: 500;
+          color: gray;
         }
         #buttons {
           a {
@@ -157,15 +167,27 @@
         flex-direction: row;
         #weekview {
           #parts {
+            a {
+              text-decoration: none;
+            }
             #date {
               font-weight: 600;
               color: gray;
             }
             #hstatus {
+              color: rgb(29, 27, 27);
+              border-radius: 5px;
               font-weight: 800;
+              .fa-times {
+                color: #ec524b;
+              }
+              .fa-check {
+                color: #b8de6f;
+              }
             }
             #hstatus:hover {
               cursor: pointer;
+              background-color: #008080;
             }
           }
         }

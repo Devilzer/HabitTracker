@@ -48,96 +48,176 @@
             </div>
             <!-- habits List....................... -->
             <div id="habit-list" class="row">
-
                 <%for(let i of habits) {%>
                     <div id="habit-content">
                         <h2><%= i.habit %> </h2>
                         <p>
                             Streak <span><%=i.streak %> </span>
                         </p>
+                        <div id="cdate">
+                            <%=carddates[0] %> 
+                        </div>
                         
                         <div id="buttons">
                             <h4 id="status">
-                               <span class="fa fa-times"></span> Not Done
+                                <%if(i.doneDays.includes(carddates[0])) {%>
+                                    <a href="/update/<%=carddates[0]%>&<%=i.habit%> ">
+                                        <span class="fa fa-check"></span> Done
+                                    </a>
+                                <% }else{ %>
+                                    <a href="/update/<%=carddates[0]%>&<%=i.habit%> ">
+                                        <span class="fa fa-times"></span> Not Done
+                                    </a>
+                                <% } %>   
                             </h4>
-                            <a href="">
+                            <a href="/delete-habit/<%=i._id%>">
                                 <h4 id="delete"><span class="fa fa-window-close"></span>
                                     Delete
                                </h4>
                             </a>   
                         </div> 
                     </div>
-                    <!-- accordian part with details -->
+<!----------------------------- accordian part with details -->
                     <div class="collapse multi-collapse" id="Example one">
                         <div class="detailscontainer">
                             <div class="card card-body" id="weekview">
                                 <div id="parts">
                                     <div id="date">
-                                        23-3-1998
+                                        <%=carddates[6] %> 
                                     </div>
-                                    <div id="hstatus">
-                                      Not Done
-                                    </div>
+                                    <%if(i.doneDays.includes(carddates[6])) {%> 
+                                    <a href="/update/<%=carddates[6]%>&<%=i.habit%> ">
+                                        <div id="hstatus">
+                                            <span class="fa fa-check"></span> Done
+                                        </div>
+                                    </a>
+                                    <% }else{ %>
+                                        <a href="/update/<%=carddates[6]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-times"></span>Not Done
+                                            </div>
+                                        </a> 
+                                    <% } %> 
                                 </div>
                               </div>
                               <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[5] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[5])) {%> 
+                                        <a href="/update/<%=carddates[5]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[5]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                                 <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[4] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[4])) {%> 
+                                        <a href="/update/<%=carddates[4]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[4]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                                 <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[3] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[3])) {%> 
+                                        <a href="/update/<%=carddates[3]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[3]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                                 <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[2] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[2])) {%> 
+                                        <a href="/update/<%=carddates[2]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[2]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                                 <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[1] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[1])) {%> 
+                                        <a href="/update/<%=carddates[1]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[1]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                                 <div class="card card-body" id="weekview">
                                   <div id="parts">
                                       <div id="date">
-                                          23-3-1998
+                                        <%=carddates[0] %>
                                       </div>
-                                      <div id="hstatus">
-                                        Not Done
-                                      </div>
+                                      <%if(i.doneDays.includes(carddates[0])) {%> 
+                                        <a href="/update/<%=carddates[0]%>&<%=i.habit%> ">
+                                            <div id="hstatus">
+                                                <span class="fa fa-check"></span> Done
+                                            </div>
+                                        </a>
+                                        <% }else{ %>
+                                            <a href="/update/<%=carddates[0]%>&<%=i.habit%> ">
+                                                <div id="hstatus">
+                                                    <span class="fa fa-times"></span>Not Done
+                                                </div>
+                                            </a> 
+                                        <% } %>
                                   </div>
                                 </div>
                         </div>

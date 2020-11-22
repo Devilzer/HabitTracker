@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    margin-bottom: 2em;
     box-shadow: 0 0 5px 1px grey;
     border-radius: 20px; }
     #maincon #container #heading {
@@ -92,10 +93,18 @@
         #maincon #container #habit-list #habit-content h2 {
           color: #008080;
           margin: 0;
-          line-height: 46px; }
+          line-height: 46px;
+          width: 30%; }
         #maincon #container #habit-list #habit-content p {
           margin: 0;
-          line-height: 46px; }
+          line-height: 46px;
+          font-weight: 500;
+          color: #ffbf00; }
+        #maincon #container #habit-list #habit-content #cdate {
+          margin: 0;
+          line-height: 46px;
+          font-weight: 500;
+          color: gray; }
         #maincon #container #habit-list #habit-content #buttons {
           display: flex;
           flex-direction: row; }
@@ -123,13 +132,22 @@
       #maincon #container #habit-list .detailscontainer {
         display: flex;
         flex-direction: row; }
+        #maincon #container #habit-list .detailscontainer #weekview #parts a {
+          text-decoration: none; }
         #maincon #container #habit-list .detailscontainer #weekview #parts #date {
           font-weight: 600;
           color: gray; }
         #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus {
+          color: #1d1b1b;
+          border-radius: 5px;
           font-weight: 800; }
+          #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus .fa-times {
+            color: #ec524b; }
+          #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus .fa-check {
+            color: #b8de6f; }
         #maincon #container #habit-list .detailscontainer #weekview #parts #hstatus:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: #008080; }
 
 form {
   padding: 0 2em; }

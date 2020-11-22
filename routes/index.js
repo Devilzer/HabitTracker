@@ -7,6 +7,8 @@ router.get("/signup",userController.signup);
 router.post("/create-user",userController.createUser);
 router.post("/login-user",userController.signinUser);
 router.post("/create-habit",userController.createHabit);
+router.get("/update/:date&:habit",userController.updateHabitStatus);
+router.get("/delete-habit/:id",userController.deleteHabit);
 // router.get("/dashboard",userController.home);
 
 module.exports = router;
