@@ -17,9 +17,19 @@
       color: #fff;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       background-color: #008080;
       width: 100%;
+      #appname {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+      }
+      #username {
+        line-height: 56px;
+        margin-right: 1em;
+        font-weight: 800;
+      }
       .company_logo {
         margin-right: 0.5em;
       }
@@ -75,6 +85,17 @@
           color: #fff;
         }
       }
+      #details {
+        a {
+          text-decoration: none;
+        }
+        h4 {
+          line-height: 86px;
+          .fa-caret-square-o-down {
+            color: #008080;
+          }
+        }
+      }
     }
     #habit-list {
       margin-left: 0px;
@@ -128,17 +149,6 @@
           }
           #delete:hover {
             background-color: #a20a0a;
-          }
-        }
-        #details {
-          a {
-            text-decoration: none;
-          }
-          h4 {
-            line-height: 46px;
-            .fa-caret-square-o-down {
-              color: #008080;
-            }
           }
         }
       }

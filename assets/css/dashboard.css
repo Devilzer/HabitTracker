@@ -15,9 +15,17 @@
       color: #fff;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       background-color: #008080;
       width: 100%; }
+      #maincon #container #heading #appname {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em; }
+      #maincon #container #heading #username {
+        line-height: 56px;
+        margin-right: 1em;
+        font-weight: 800; }
       #maincon #container #heading .company_logo {
         margin-right: 0.5em; }
     #maincon #container #qoute {
@@ -65,6 +73,12 @@
         #maincon #container #hinput .form-group .btn:focus {
           background-color: #008080;
           color: #fff; }
+      #maincon #container #hinput #details a {
+        text-decoration: none; }
+      #maincon #container #hinput #details h4 {
+        line-height: 86px; }
+        #maincon #container #hinput #details h4 .fa-caret-square-o-down {
+          color: #008080; }
     #maincon #container #habit-list {
       margin-left: 0px;
       display: flex;
@@ -106,12 +120,6 @@
             margin-left: 0.5em; }
           #maincon #container #habit-list #habit-content #buttons #delete:hover {
             background-color: #a20a0a; }
-        #maincon #container #habit-list #habit-content #details a {
-          text-decoration: none; }
-        #maincon #container #habit-list #habit-content #details h4 {
-          line-height: 46px; }
-          #maincon #container #habit-list #habit-content #details h4 .fa-caret-square-o-down {
-            color: #008080; }
       #maincon #container #habit-list .detailscontainer {
         display: flex;
         flex-direction: row; }
