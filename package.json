@@ -16,9 +16,7 @@
     "moment": "^2.29.1",
     "mongoose": "^5.10.15",
     "node-sass-middleware": "^0.11.0",
-    "store": "^2.0.12"
-  },
-  "devDependencies": {
+    "store": "^2.0.12",
     "nodemon": "^2.0.6"
   }
 }
