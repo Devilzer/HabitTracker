@@ -40,13 +40,11 @@ try {
 module.exports.signinUser = async(req,res)=>{
 try {
     
-    console.log(carddates);
     const habits =await Habit.find({userEmail:req.body.email});
     for(let i of habits){
         i.streak = i.doneDays.length;
         i.save();
     }
-    console.log(habits);
     const user =await User.findOne({email:req.body.email});
     const localuser = {
         username: user.username,
